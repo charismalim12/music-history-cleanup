@@ -1,4 +1,4 @@
-listen_id,date,artist,genre,track,minutes,plays,device,rating
+ListenID,Date,Artist,Genre,Track,SongLength,PlayCount,Device,Rating
 2006,2026-10-12,Kid Cadence,Hip-Hop,Loose Change,3.3 min,3,Laptop,5
 2027,2026-10-12,Rainy Desk,LO-FI,Study Break,2.4,2,Laptop,5
 2018,2026-10-13,Sleepy Mango,Lo-Fi,Window Seat,3.1 min,2,Speaker,
