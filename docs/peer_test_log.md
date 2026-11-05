@@ -25,16 +25,15 @@ Test from a clean start: a fresh folder, no old files.
 |---|---|---|---|
 | 1 | Cloned (or downloaded) the repository into a new folder | [ ] | |
 | 2 | Package install command worked | [ ] | |
-| 3 | Starter file runs untouched and shows `0 of 13 checks passed` | [ ] | |
-| 4 | TODO 1 gives the Checkpoint 1 output (total `24.5 minutes`) | [ ] | |
-| 5 | TODO 2 gives shape `(50, 9)` | [ ] | |
-| 6 | TODO 3a to 3e all `[PASS]`; shape `(45, 10)`; total `354.2 minutes` | [ ] | |
-| 7 | TODO 4 gives Pop 12, long listens 16, long phone listens 7 | [ ] | |
-| 8 | TODO 5 opens a chart and saves `code/output/listens_per_genre.png` | [ ] | |
-| 9 | Scoreboard shows `13 of 13 checks passed` | [ ] | |
-| 10 | Finished file (`music_cleanup_finished.py`) also runs with 13 of 13 | [ ] | |
-| 11 | Bonus TODO 6 gives Pop `95.0` and Lo-Fi `31.3` | [ ] | |
-| 12 | Bonus TODO 7 top listen is `2017` with `19.2`, and the clean CSV is saved | [ ] | |
+| 3 | TODO 1 gives `[7.  4.  7.5 6. ]` and `Total: 24.5` | [ ] | |
+| 4 | TODO 2 gives shape `(50, 9)`, 13 genres, 4 missing, 5 duplicates | [ ] | |
+| 5 | TODO 3 gives shape `(45, 9)`, 5 clean genres, `float64`, 0 missing | [ ] | |
+| 6 | TODO 4 gives total `354.2`, Pop `12`, long phone listens `7` | [ ] | |
+| 7 | TODO 5 prints Pop `95.0` / Lo-Fi `31.3` and opens a bar chart | [ ] | |
+| 8 | Finished file (`music_cleanup_finished.py`) runs with no errors | [ ] | |
+| 9 | Bonus A table matches the README (Electronic: 6, 56.0, 9.33) | [ ] | |
+| 10 | Bonus B top listen is `2017` with `19.2` | [ ] | |
+| 11 | Every page number in the README checked against the physical book | [ ] | |
 
 ---
 
@@ -60,32 +59,30 @@ Test from a clean start: a fresh folder, no old files.
 | 2 | Clone or download it | [ ] | [ ] | |
 | 3 | Open the folder in VS Code | [ ] | [ ] | |
 | 4 | Install the packages from `requirements.txt` | [ ] | [ ] | |
-| 5 | Run the starter file and see the empty scoreboard | [ ] | [ ] | |
+| 5 | Open the starter file and understand which lines to edit | [ ] | [ ] | |
 
 ### Activity checklist
 
 | # | Did the tester... | Yes | No | Time (min) | Where they got stuck / what they said |
 |---|---|---|---|---|---|
-| 1 | Complete TODO 1 (NumPy) | [ ] | [ ] | | |
+| 1 | Complete TODO 1 (NumPy warm-up) | [ ] | [ ] | | |
 | 2 | Complete TODO 2 (load the CSV) | [ ] | [ ] | | |
-| 3 | Name the problems in the data after TODO 2 | [ ] | [ ] | | |
-| 4 | Complete TODO 3a (duplicates) | [ ] | [ ] | | |
-| 5 | Complete TODO 3b (genre names) | [ ] | [ ] | | |
-| 6 | Complete TODO 3c (minutes text to number) | [ ] | [ ] | | |
-| 7 | Complete TODO 3d (missing play counts) | [ ] | [ ] | | |
-| 8 | Complete TODO 3e (total_minutes column) | [ ] | [ ] | | |
-| 9 | Complete TODO 4a to 4c (filters) | [ ] | [ ] | | |
-| 10 | Complete TODO 5a to 5c (bar chart) | [ ] | [ ] | | |
-| 11 | Reach `13 of 13 checks passed` without author hints | [ ] | [ ] | | |
-| 12 | Match the expected outputs shown in the README images | [ ] | [ ] | | |
+| 3 | Name at least 3 problems in the data after TODO 2 | [ ] | [ ] | | |
+| 4 | Complete TODO 3 (all four cleaning fixes) | [ ] | [ ] | | |
+| 5 | Notice when their output did not match an `Expected` comment | [ ] | [ ] | | |
+| 6 | Complete TODO 4a (TotalMinutes column) | [ ] | [ ] | | |
+| 7 | Complete TODO 4b and 4c (`query()` filters) | [ ] | [ ] | | |
+| 8 | Complete TODO 5a (`groupby` summary) | [ ] | [ ] | | |
+| 9 | Complete TODO 5b (bar chart with title and label) | [ ] | [ ] | | |
+| 10 | Match all the `Expected` values without author hints | [ ] | [ ] | | |
 
 ### Understanding checks (ask these after the activity, without looking at the README)
 
 | # | Question | Correct | Partly | Not yet | Tester's answer |
 |---|---|---|---|---|---|
-| 1 | Why do we write `clean["genre"] = clean["genre"].str.strip()...` instead of just `clean["genre"].str.strip()...`? | [ ] | [ ] | [ ] | |
-| 2 | What does `clean["total_minutes"] >= 10` give back on its own? | [ ] | [ ] | [ ] | |
-| 3 | Why `&` and parentheses instead of `and`? | [ ] | [ ] | [ ] | |
+| 1 | Why do we write `clean["Genre"] = clean["Genre"].str.strip()...` instead of just `clean["Genre"].str.strip()...`? | [ ] | [ ] | [ ] | |
+| 2 | Inside `query()`, why are there quotes around `"Pop"`? | [ ] | [ ] | [ ] | |
+| 3 | If we skipped `.drop_duplicates()`, which number would be wrong, and which way? | [ ] | [ ] | [ ] | |
 | 4 | Name two kinds of messy data we fixed. | [ ] | [ ] | [ ] | |
 
 ### Errors the tester hit
@@ -102,6 +99,7 @@ Test from a clean start: a fresh folder, no old files.
 |---|---|
 | Were the instructions clear? (1 = confusing, 5 = very clear) | |
 | Was the activity the right length? (too short / right / too long) | |
+| Were the `Expected` comments helpful for checking your work? | |
 | What was the most confusing sentence or step? | |
 | What was the most helpful part? | |
 | What one thing would you change? | |
@@ -123,9 +121,10 @@ Write each problem found, and the exact change you made to the README, code, or 
 | # | Check | Done |
 |---|---|---|
 | 1 | All `[FILL IN]` and `[EDIT THIS]` markers in the README are replaced | [ ] |
-| 2 | Textbook chapter and page references verified against the book | [ ] |
-| 3 | Repository link works from a different account / browser | [ ] |
-| 4 | Instructor and classmates have access | [ ] |
-| 5 | Latest changes committed and pushed; commit history shows steady progress | [ ] |
-| 6 | No passwords, API keys, or private information in the repository | [ ] |
-| 7 | Backup chart image and scoreboard screenshot saved | [ ] |
+| 2 | Textbook chapter and page references verified against the physical book | [ ] |
+| 3 | AI-use note mentions both ChatGPT (book notes) and Claude, and describes how I verified | [ ] |
+| 4 | Repository link works from a different account / browser | [ ] |
+| 5 | Instructor and classmates have access | [ ] |
+| 6 | Latest changes committed and pushed; commit history shows steady progress | [ ] |
+| 7 | No passwords, API keys, or private information in the repository | [ ] |
+| 8 | Backup screenshot of the chart saved | [ ] |
