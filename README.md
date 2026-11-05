@@ -57,7 +57,7 @@ You need Python 3.10 or newer and VS Code (or any editor plus a terminal).
 1. **Clone the repository.** Open a terminal in the folder where you keep class work, then run (replace the placeholder with the real link):
 
    ```
-   git clone https://github.com/<your-username>/music-history-cleanup.git
+   git clone https://github.com/charismalim12/music-history-cleanup.git
    ```
 
    No Git? On the repository page click **Code > Download ZIP** and unzip it instead.
