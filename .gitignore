@@ -5,8 +5,8 @@ __pycache__/
 venv/
 env/
 
-# Files the activity creates when you run it
-code/output/
+# A chart you may save while running the activity
+/chart.png
 
 # Editors and operating systems
 .vscode/
