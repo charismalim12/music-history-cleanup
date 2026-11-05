@@ -1,0 +1,51 @@
+listen_id,date,artist,genre,track,minutes,plays,device,rating
+2006,2026-10-12,Kid Cadence,Hip-Hop,Loose Change,3.3 min,3,Laptop,5
+2027,2026-10-12,Rainy Desk,LO-FI,Study Break,2.4,2,Laptop,5
+2018,2026-10-13,Sleepy Mango,Lo-Fi,Window Seat,3.1 min,2,Speaker,
+2026,2026-10-13,Sleepy Mango,lo-fi,Window Seat,3.1,1,Laptop,5
+2036,2026-10-13,Kid Cadence,Hip-Hop,Loose Change,3.3 min,,Phone,3
+2040,2026-10-13,The Paper Foxes,Rock,Long Way Down,5.1,3,Phone,2
+2043,2026-10-13,Juniper Sky, Pop,Paper Planets,3.4 min,1,Laptop,2
+2044,2026-10-13,Rainy Desk,Lo-Fi,Study Break,2.4,1,Laptop,4
+2043,2026-10-13,Juniper Sky, Pop,Paper Planets,3.4 min,1,Laptop,2
+2019,2026-10-14,Juniper Sky,POP ,Sugar Rush Hour,2.9 min,2,Phone,4
+2024,2026-10-14,MC Marlow,Hip-Hop,Night Shift,4.1,3,Laptop,
+2032,2026-10-14,Pulse Garden,Electronic,Neon Rain,5.4 min,2,Phone,4
+2001,2026-10-15,Nova Lane,POP ,Glitter Static,3.2,3,Speaker,1
+2002,2026-10-15,Neon Atlas,Electronic,Afterglow,5.0 min,1,Phone,4
+2011,2026-10-15,Static Harbor,rock ,Open Highway,4.6,,Phone,1
+2016,2026-10-16,The Paper Foxes,Rock,Burnt Toast,4.2 min,1,Phone,1
+2035,2026-10-16,Sleepy Mango,Lo-Fi,Window Seat,3.1,2,Laptop,1
+2004,2026-10-17,Juniper Sky, Pop,Paper Planets,3.4 min,4,Laptop,2
+2034,2026-10-17,MC Marlow,Hip-Hop,Night Shift,4.1,1,Speaker,
+2038,2026-10-17,MC Marlow,HIP-HOP,Night Shift,4.1 min,2,Phone,4
+2035,2026-10-16,Sleepy Mango,Lo-Fi,Window Seat,3.1,2,Laptop,1
+2041,2026-10-17,Nova Lane,Pop,Glitter Static,3.2,2,Phone,4
+2045,2026-10-17,Juniper Sky,Pop,Paper Planets,3.4 min,3,Phone,2
+2007,2026-10-18,MC Marlow,HIP-HOP,Concrete Garden,3.8,3,Speaker,4
+2008,2026-10-18,Kid Cadence,Hip-Hop,Back Row,3.9 min,,Laptop,2
+2013,2026-10-18,Sleepy Mango,LO-FI,Window Seat,3.1,1,Laptop,3
+2029,2026-10-18,The Paper Foxes,Rock,Long Way Down,5.1 min,2,Speaker,5
+2033,2026-10-18,Nova Lane,Pop,Midnight Postcard,3.6,1,Speaker,4
+2003,2026-10-19,MC Marlow,HIP-HOP,Concrete Garden,3.8 min,1,Speaker,
+2029,2026-10-18,The Paper Foxes,Rock,Long Way Down,5.1 min,2,Speaker,5
+2015,2026-10-19,Juniper Sky,Pop,Sugar Rush Hour,2.9,2,Speaker,2
+2017,2026-10-19,Neon Atlas, Electronic,Signal Fade,4.8 min,4,Phone,2
+2028,2026-10-19,MC Marlow,Hip-Hop,Concrete Garden,3.8,4,Phone,4
+2031,2026-10-19,Nova Lane,Pop,Glitter Static,3.2 min,3,Phone,1
+2009,2026-10-20,Static Harbor,rock ,Open Highway,4.6,,Phone,5
+2012,2026-10-20,Neon Atlas,Electronic,Signal Fade,4.8 min,1,Laptop,1
+2014,2026-10-20,Juniper Sky, Pop,Sugar Rush Hour,2.9,4,Laptop,5
+2014,2026-10-20,Juniper Sky, Pop,Sugar Rush Hour,2.9,4,Laptop,5
+2025,2026-10-20,MC Marlow,Hip-Hop,Night Shift,4.1 min,3,Speaker,3
+2030,2026-10-20,Pulse Garden,Electronic,Neon Rain,5.4,1,Phone,4
+2039,2026-10-20,Static Harbor,ROCK,Rust Belt,3.7 min,3,Phone,5
+2020,2026-10-21,Nova Lane,Pop,Glitter Static,3.2,3,Phone,4
+2023,2026-10-21,The Paper Foxes,rock ,Long Way Down,5.1 min,3,Laptop,
+2042,2026-10-21,Static Harbor,Rock,Rust Belt,3.7,3,Laptop,5
+2037,2026-10-22,Sleepy Mango,LO-FI,Window Seat,3.1,1,Phone,3
+2021,2026-10-22,Static Harbor,Rock,Rust Belt,3.7 min,3,Laptop,4
+2037,2026-10-22,Sleepy Mango,LO-FI,Window Seat,3.1,1,Phone,3
+2005,2026-10-23,Rainy Desk,Lo-Fi,Study Break,2.4 min,1,Laptop,5
+2010,2026-10-23,Pulse Garden, Electronic,Neon Rain,5.4,2,Phone,2
+2022,2026-10-23,Juniper Sky,Pop,Sugar Rush Hour,2.9 min,2,Phone,5
